@@ -52,7 +52,6 @@ curl -v 'http://localhost:5002/links/5bfd55cfcb932f8781e74766/downloads/5c01d29b
 > Accept: */*
 >
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0< HTTP/1.1 200 OK
-< X-Powered-By: Express
 < Content-Type: application/zip
 < Content-Disposition: attachment; filename="l_stationtramv2_r27.shp.zip"
 < Date: Thu, 07 Feb 2019 15:34:36 GMT
