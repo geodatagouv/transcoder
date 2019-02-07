@@ -19,6 +19,7 @@
     "split-on-first": "^1.0.0"
   },
   "devDependencies": {
+    "lerna-changelog": "^0.8.2",
     "xo": "^0.24.0"
   },
   "xo": {
@@ -27,5 +28,18 @@
     "rules": {
       "unicorn/no-process-exit": false
     }
+  },
+  "changelog": {
+    "cacheDir": ".changelog",
+    "labels": {
+      "bug": ":bug: Bug Fix",
+      "cleanup": ":shower: Cleanup",
+      "documentation": ":memo: Documentation",
+      "enhancement": ":rocket: Enhancement",
+      "performance": ":racehorse: Performance",
+      "security": ":policeman: Security",
+      "dependencies": ":arrow_up: Dependencies"
+    },
+    "repo": "geodatagouv/transcoder"
   }
 }
