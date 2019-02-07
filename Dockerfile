@@ -26,4 +26,4 @@ RUN mkdir -p /opt/bin
 
 EXPOSE 5003
 # ENTRYPOINT ["/opt/bin/entrypoint.sh"]
-CMD ["node", "server.js"]
+CMD ["node", "index.js"]
