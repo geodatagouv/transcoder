@@ -9,7 +9,6 @@ RUN yarn --production --frozen-lockfile
 
 # 2/2 Create production image
 FROM geodatagouv/node-gdal:10
-ARG SOURCE_COMMIT=unknown
 
 RUN mkdir -p /opt/transcoder
 WORKDIR /opt/transcoder
@@ -18,12 +17,11 @@ COPY --from=build /opt/transcoder .
 COPY . .
 
 ENV NODE_ENV=production \
-    SENTRY_DSN_FILE=sentry_dsn \
-    SENTRY_RELEASE=${SOURCE_COMMIT}
+    SENTRY_DSN_FILE=sentry_dsn
 
 RUN mkdir -p /opt/bin
-# COPY docker/scripts/entrypoint.sh /opt/bin/
+COPY docker/entrypoint.sh /opt/bin/
 
 EXPOSE 5003
-# ENTRYPOINT ["/opt/bin/entrypoint.sh"]
+ENTRYPOINT ["/opt/bin/entrypoint.sh"]
 CMD ["node", "index.js"]
