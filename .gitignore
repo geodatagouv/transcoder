@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+
+# Temporary files
+*.log
+
+# Coverage
+coverage/
+
+# Reports
+reports/
+
+# Changelog
+.changelog
+CHANGELOG.md
+
+# Env
+.env*
+!.env.sample
