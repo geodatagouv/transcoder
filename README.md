@@ -8,17 +8,12 @@
 
 ## Getting started
 
-### Requirements
-
-For now, this is supposed to run alongside [geoplatform](https://github.com/geodatagouv/geoplatform) as they share the same database to access WFS services and feature types. In the feature this will use the geoplatform API.
-
 ### Providers
 
 This exposes a service to transcode geodata for the following providers:
 
 - `links`: uses [link-proxy](https://github.com/geodatagouv/link-proxy) downloads, configured with the `LINK_PROXY_URL` environment variable.
-- `services`: uses [geoplatform](https://github.com/geodatagouv/geoplatform) services, configured with the `MONGO_URL` and `MONGO_DB` environment variables.
-
+- `services`: uses [geoplatform](https://github.com/geodatagouv/geoplatform) services, configured with the `GEOPLATFORM_URL` environment variable.
 
 ## API
 
