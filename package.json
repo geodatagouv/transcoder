@@ -15,7 +15,8 @@
     "got": "^9.6.0",
     "morgan": "^1.9.1",
     "ms": "^2.1.1",
-    "ogr2ogr": "^1.4.0"
+    "ogr2ogr": "^1.4.0",
+    "split-on-first": "^1.0.0"
   },
   "devDependencies": {
     "lerna-changelog": "^0.8.2",
