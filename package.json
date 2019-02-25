@@ -8,7 +8,7 @@
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@sentry/node": "^4.5.4",
+    "@sentry/node": "^4.6.3",
     "cors": "^2.8.5",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
